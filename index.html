@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #searchInput {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #searchButton {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        #searchButton:hover {
+            background-color: #0056b3;
+        }
+        .load{
+            display: none;
+            background-color: aquamarine;
+            border-radius: 7px;
+            margin-left: 50%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Job Search</h1>
+    </header>
+
+    <form id="form">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Enter job title..." required>
+            
+            <button type="submit" id="searchButton">Search</button>
+        
+        </div>
+
+    </form>
+    <div id="result"></div>
+    <button id="loadMore" class="load">Load More</button>
+
+    <!-- Your job search results or content can go here -->
+    <script src="api2.js"></script>
+
+</body>
+</html>
